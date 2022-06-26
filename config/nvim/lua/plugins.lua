@@ -21,12 +21,11 @@ require('packer').startup(function()
 	use 'neovim/nvim-lspconfig'
 
 	-- Completion
-  use 'neovim/nvim-lspconfig'
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-path'
-  use 'hrsh7th/cmp-cmdline'
-  use 'hrsh7th/nvim-cmp'
+	use 'hrsh7th/cmp-nvim-lsp'
+	use 'hrsh7th/cmp-buffer'
+	use 'hrsh7th/cmp-path'
+	use 'hrsh7th/cmp-cmdline'
+	use 'hrsh7th/nvim-cmp'
 
 	-- Floating terminal
 	use 'voldikss/vim-floaterm'
@@ -49,7 +48,7 @@ require('packer').startup(function()
 	-- Markdown Preview
 	use {
 		'iamcco/markdown-preview.nvim',
-		run = 'cd app && yarn install',
+		run = 'cd app && yarn install'
 	}
 
 	-- Treesitter
