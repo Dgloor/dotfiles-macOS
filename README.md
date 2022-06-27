@@ -29,6 +29,7 @@ brew install alacritty starship zsh zsh-autosuggestions zsh-syntax-highlighting
 - Duf
 - Lf
 - Lsd 
+- Mackup - Backup dotfiles
 - Macos-trash
 - Pfetch 
 - Rar
@@ -36,7 +37,7 @@ brew install alacritty starship zsh zsh-autosuggestions zsh-syntax-highlighting
 - Tree 
 
 ~~~
-brew install autojump bat duf lf lsd macos-trash pfetch rar rg tree
+brew install autojump bat duf lf lsd mackup macos-trash pfetch rar rg tree
 ~~~
 
 ### Software Dev
@@ -120,7 +121,9 @@ brew install iina stremio
 brew install figma
 ~~~
 
-## Move config files
+## Restore config files
 
-cd ~/Repos/dotfiles && make install
+~~~
+cp config/.mackup.cfg ~/ && mackup backup
+~~~
 

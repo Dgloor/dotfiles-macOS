@@ -30,3 +30,6 @@ starship.toml:
 	@ln -sf $(DOTS_SF_DIR)/$@ $(CONFIG_DIR)/$@
 	@echo "* $@ (ready)"
 
+clean:
+	$(RM_DIR)
+

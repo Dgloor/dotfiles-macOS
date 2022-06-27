@@ -1,0 +1,43 @@
+# ========== Basic Settings ========== #
+set preview true
+set drawbox true
+set info size
+set icons true
+set ignorecase true
+# set hidden true
+
+# ========== Key Bingings ========== #
+# Remove some defaults
+map m
+map w
+map n
+map "'"
+map '"'
+map c
+map d
+map e
+map f
+map u
+map x
+map y
+
+# Open
+map ee $$EDITOR "$f"
+
+# Basic functions
+map . set hidden!
+map yy copy
+map dd cut
+map r rename
+map R reload
+map C clear
+map U unselect
+map H top
+map L bottom
+map ch chmod
+
+map <enter> open
+map S $$SHELL
+
+# autojump
+map J push :j<space>
