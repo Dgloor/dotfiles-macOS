@@ -61,7 +61,8 @@ npm i -g bash-language-server vscode-langservers-extract vls @angular/language-s
 ### GUI
 
 - [Bitwarden](https://bitwarden.com/)
-- Google chrome
+- Google Chrome
+- Google Drive
 - Firefox
 
 ~~~
@@ -70,7 +71,7 @@ brew install bitwarden google-chrome firefox
 
 ### Mac Utilities
 
-- Alt-tab 
+- [Alt-tab](https://alt-tab-macos.netlify.app/) - Windows alt-tab on macOS
 - Cheatsheet 
 - Hiddenbar 
 - [Maccy](https://github.com/p0deje/Maccy) - Clipboard manager
@@ -105,6 +106,7 @@ brew install notion obsidian
 
 ### Entertaiment
 
+- Amazon Prime Video
 - Stremio
 - Iina
 
