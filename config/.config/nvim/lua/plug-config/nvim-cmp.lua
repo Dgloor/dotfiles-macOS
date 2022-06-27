@@ -5,28 +5,27 @@ cmp.setup({
 		-- completion = cmp.config.window.bordered(),
 		-- documentation = cmp.config.window.bordered(),
 	},
+	preselect = cmp.PreselectMode.None,
 	mapping = cmp.mapping.preset.insert({
 		['<C-b>'] = cmp.mapping.scroll_docs(-4),
 		['<C-f>'] = cmp.mapping.scroll_docs(4),
 		['<C-Space>'] = cmp.mapping.complete(),
 		['<C-e>'] = cmp.mapping.abort(),
-		['<CR>'] = cmp.mapping.confirm({ select = true }),
+		-- ['<CR>'] = cmp.mapping.confirm({ select = true }),
+		['<CR>'] = cmp.mapping.confirm({ 
+			behavior = cmp.ConfirmBehavior.Replace,
+			select = true
+		}),
 		["<S-Tab>"] = cmp.mapping.select_prev_item(),
-		-- ["<Tab>"] = cmp.mapping({
-		-- 	i = function(_)
-		-- 		if cmp.visible() then
-		-- 			cmp.select_next_item({ behavior = cmp.SelectBehavior.Insert })
-		-- 		elseif vim.fn["UltiSnips#CanJumpForwards"]() == 1 then
-		-- 			vim.api.nvim_feedkeys(t("<Plug>(ultisnips_jump_forward)"), 'm', true)
-		-- 		else
-		-- 			vim.api.nvim_feedkeys(t('<Tab>'), 'n', true)        -- fallback()
-
-		-- 		end
-		-- 	end,
-		-- }),
+		["<Tab>"] = cmp.mapping({
+			i = function(_)
+				if cmp.visible() then
+					cmp.select_next_item({ behavior = cmp.SelectBehavior.Insert })
+				end
+			end,
+		}),
 	}),
 
-	preselect = cmp.PreselectMode.None,
 
 	sources = cmp.config.sources({
 		{ name = 'nvim_lsp' },

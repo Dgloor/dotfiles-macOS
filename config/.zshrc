@@ -32,7 +32,7 @@ alias py='python3'
 
 # Files
 alias nz='nvim ~/.zshrc'
-alias nn='cd ~/.config/nvim && nvim init.lua'
+alias nn='cd ~/Repos/dotfiles/config/.config/nvim && nvim init.lua'
 
 # Utils
 #alias rm='rm -i'
