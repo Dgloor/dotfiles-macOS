@@ -129,3 +129,9 @@ brew install figma
 cp config/.mackup.cfg ~/ && mackup backup
 ~~~
 
+## Allow all apps
+
+~~~
+sudo spctl --global-disable
+~~~
+
