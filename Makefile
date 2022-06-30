@@ -12,7 +12,7 @@ LN_DF        = @ln -sf $(DOTS_DF_DIR)/$@ $(CONFIG_DIR)/$@
 
 # Targets
 DF_CONFIGS   = alacritty bottom lf nvim
-SF_CONFIGS   = .zshrc .zshenv .vimrc
+SF_CONFIGS   = .zshrc .zshenv .vimrc .gitconfig
 
 install: $(SF_CONFIGS) $(DF_CONFIGS) starship.toml
 	@echo "Your config files are ready!"

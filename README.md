@@ -72,13 +72,15 @@ brew install bitwarden google-chrome firefox
 ### Mac Utilities
 
 - [Alt-tab](https://alt-tab-macos.netlify.app/) - Windows alt-tab on macOS
+- AppCleaner
 - Cheatsheet 
 - Hiddenbar 
 - [Maccy](https://github.com/p0deje/Maccy) - Clipboard manager
-- CleanMyMac
+- [Unnatural Scroll Wheel](https://github.com/ther0n/UnnaturalScrollWheels) - Fix Scroll Wheel & Mouse acceleration
 
 ~~~
-brew install alt-tab hiddenbar cheatsheet maccy
+brew install alt-tab hiddenbar cheatsheet maccy appcleaner 
+brew install --cask unnaturalscrollwheels
 ~~~
 
 ### Communication
@@ -129,9 +131,12 @@ brew install figma
 cp config/.mackup.cfg ~/ && mackup backup
 ~~~
 
-## Allow all apps
+## Other
+
+### Allow all apps
 
 ~~~
 sudo spctl --global-disable
 ~~~
+
 

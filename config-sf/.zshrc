@@ -45,6 +45,8 @@ alias ei='exit'
 
 # Git
 alias gs='git status -s'
+alias ga='git add'
+alias gp='git pull'
 
 
 export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"

@@ -9,6 +9,11 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 -- Fuck Esc
+map('i', ';;', '<Esc>', noremap)
+map('c', ';;', '<Esc>', noremap)
+map('v', ';;', '<Esc>', noremap)
+
+-- Fuck Esc (Latin American Keyboard)
 map('i', 'ññ', '<Esc>', noremap)
 map('v', 'ññ', '<Esc>', noremap)
 map('c', 'ññ', '<Esc>', noremap)
