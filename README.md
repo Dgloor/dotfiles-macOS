@@ -76,10 +76,11 @@ brew install bitwarden google-chrome firefox
 - Cheatsheet 
 - Hiddenbar 
 - [Maccy](https://github.com/p0deje/Maccy) - Clipboard manager
+- Rectangule - Window manager
 - [Unnatural Scroll Wheel](https://github.com/ther0n/UnnaturalScrollWheels) - Fix Scroll Wheel & Mouse acceleration
 
 ~~~
-brew install alt-tab hiddenbar cheatsheet maccy appcleaner 
+brew install alt-tab hiddenbar cheatsheet maccy appcleaner rectangle
 brew install --cask unnaturalscrollwheels
 ~~~
 
@@ -128,15 +129,15 @@ brew install figma
 ## Restore config files
 
 ~~~
-cp config/.mackup.cfg ~/ && mackup backup
+make install
+mackup restore
 ~~~
 
 ## Other
 
-### Allow all apps
+### Allow all apps (security)
 
 ~~~
 sudo spctl --global-disable
 ~~~
-
 
