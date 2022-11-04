@@ -37,7 +37,7 @@ wo.number = true                        -- Line numbers
 wo.numberwidth = 1                      -- Line numbers width
 wo.relativenumber = true                -- Show numbers relative to current line
 wo.signcolumn = 'yes'                   -- Draw a signcolumn
-wo.t_Co = '256'                         -- Support 256 colors
+--wo.t_Co = '256'                         -- Support 256 colors
 wo.wrap = false                         -- Display long lines as just one line
 
 -- Buffer-local options
